@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration > 
+<!--jar檔路徑***** -->
+
+	<classPathEntry location="D:\eclipse-mars\workspace\MB_MAIN_SYSTEM/WebContent/WEB-INF/lib/mysql-connector-java-5.1.34.jar" />
+
+<!--資料路類型、資料庫url、使用者名稱、密碼***** -->
+
+	<context id="context1">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.0.252:3307/dev_moneyboss_php" userId="rd21" password="rd21" />
+	
+	<!--package名稱、專案名稱***** -->
+	
+	    <javaModelGenerator targetPackage="com.mb.main.system.model" targetProject="MB_MAIN_SYSTEM" />
+	    <sqlMapGenerator targetPackage="com.mb.main.system.mapper.xml" targetProject="MB_MAIN_SYSTEM" />
+	    <javaClientGenerator targetPackage="com.mb.main.system.mapper" targetProject="MB_MAIN_SYSTEM" type="XMLMAPPER" />
+	
+	<!--資料表名稱***** -->
+	
+<!-- 	    <table schema="" tableName="b_agents" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="b_enterprise" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="b_enterprise_employee" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="b_industry" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+	    <table schema="" tableName="b_service" >
+	        <generatedKey column="id" sqlStatement="JDBC"/>
+	        <columnOverride column="url" jdbcType="VARCHAR" />
+	    </table>
+<!-- 	    <table schema="" tableName="b_service_advance" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="b_service_advance" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="b_service_category" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="d_enterprise_service" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="d_enterprise_service_advance" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="d_enterprise_try_out" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="r_employee_login_history" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="r_enterprise_employee_password_history" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="r_enterprise_login_history" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="r_enterprise_password_history" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="r_industry_generate_history" > -->
+<!-- 	        <generatedKey column="id" sqlStatement="JDBC"/> -->
+<!-- 	    </table> -->
+<!-- 	    <table schema="" tableName="v_enterprise_login" > -->
+<!-- 	    </table> -->
+	</context>
+</generatorConfiguration>

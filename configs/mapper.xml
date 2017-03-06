@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+<!-- 	    Set the mapper interface class -->
+<!-- 		<typeAlias alias="JavaTran" type="tran.dto.JavaTran" /> -->
+	</typeAliases>
+	<mappers>
+		<mapper resource="com/mb/main/system/mapper/xml/BAgentsMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/BEnterpriseEmployeeMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/BEnterpriseMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/BIndustryMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/BServiceAdvanceMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/BServiceCategoryMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/BServiceMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/DEnterpriseServiceAdvanceMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/DEnterpriseServiceMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/DEnterpriseTryOutMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/ExceptionRecordMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/REmployeeLoginHistoryMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/REnterpriseEmployeePasswordHistoryMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/REnterpriseLoginHistoryMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/REnterprisePasswordHistoryMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/RIndustryGenerateHistoryMapper.xml" />
+		<mapper resource="com/mb/main/system/mapper/xml/VEnterpriseLoginMapper.xml" />
+	</mappers>
+</configuration>
